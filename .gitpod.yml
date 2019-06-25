@@ -5,5 +5,6 @@ image:
 ports:
   - port: 6080
     protocol: "http"
-tasks:
-  - command: "go get -v ./... && go run main.go"
+tasks: 
+  - command cd /workspace/src/github.com/32leaves/hello-ui/  && 
+    go run main.go
