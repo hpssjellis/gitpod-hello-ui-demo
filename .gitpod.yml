@@ -1,9 +1,8 @@
-checkoutLocation: $gp(GITPOD_REPO_ROOT)
-workspaceLocation:  /
+
 image:
   file: Dockerfile
 ports:
   - port: 6080
     protocol: "http"
 tasks:
-  - command: "go get -v ./... && go run  "$gp(GITPOD_REPO_ROOT)"/myGo/main.go"
+  - command: "go get -v ./... && go run main.go"
