@@ -1,4 +1,4 @@
-checkoutLocation: src/github.com/32leaves/hello-ui
+checkoutLocation: src/github.com/hpssjellis/gitpod-hello-ui-demo
 workspaceLocation: /
 image:
   file: Dockerfile
@@ -6,9 +6,7 @@ ports:
   - port: 6080
     protocol: "http"
 tasks:
-  - command: cd "/workspace/go/src/github.com/32leaves/gitpod-hello-ui-demo" &&
-    go get -v ./...      && 
-    go run main.go
+  - command: "go get -v ./... && go run main.go"
   
   
   
