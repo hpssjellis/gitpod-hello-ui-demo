@@ -13,6 +13,8 @@ tasks:
   - command: "go get -v ./... "
   
   
-  
+  # not getting the following working from the .gitpod.yml file
+  # go run /workspace/src/github.com/hpssjellis/gitpod-hello-ui-demo/main.go 
+
   
   
