@@ -1,15 +1,17 @@
 checkoutLocation: src/github.com/hpssjellis/gitpod-hello-ui-demo
+
 workspaceLocation: /
+
 image:
   file: Dockerfile
+  
 ports:
   - port: 6080
-    protocol: "http"
+    onOpen: open-preview
+    
 tasks:
-  - command: go get -v ./... 
-  
-  
-  #&& go run /workspace/src/github.com/hpssjellis/gitpod-hello-ui-demo/main.go"
+  - command: go get -v ./...    &&
+     go run /workspace/src/github.com/hpssjellis/gitpod-hello-ui-demo/main.go
   
   
   
