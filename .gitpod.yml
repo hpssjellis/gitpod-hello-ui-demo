@@ -10,7 +10,8 @@ ports:
     onOpen: open-preview
     
 tasks:
-  - command: "go get -v ./... && cd /workspace/go && go run ../src/github.com/hpssjellis/gitpod-hello-ui-demo/main.go"
+  - command: go get -v ./...  
+    && go run /workspace/src/github.com/hpssjellis/gitpod-hello-ui-demo/main.go
   
   
   
