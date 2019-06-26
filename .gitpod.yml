@@ -1,9 +1,9 @@
-checkoutLocation: src/github.com/32leaves/hello-ui
-workspaceLocation: /
+checkoutLocation: $gp(GITPOD_REPO_ROOT)
+workspaceLocation:  $gp(GITPOD_REPO_ROOT)
 image:
   file: Dockerfile
 ports:
   - port: 6080
     protocol: "http"
 tasks:
-  - command: "go get -v ./... && go run main.go"
+  - command: "go get -v ./... && go run  $gp(GITPOD_REPO_ROOT)/myGo/main.go"
