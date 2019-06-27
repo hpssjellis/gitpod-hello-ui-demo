@@ -10,13 +10,11 @@ ports:
     protocol: "http"
     
 tasks:
-  - command: go get -v ./...               &&
-             gp await-port 6080            &&
-             gp preview $(gp url 6080)        
-    
+  - command: "go get -v ./... "
+  - command: gp await-port 6080            &&
+             xterm                         &&
+             gp preview $(gp url 6080)     
+             
   
   # not getting the following working from the .gitpod.yml file, but it works fine from the command line
   # go run /workspace/src/github.com/hpssjellis/gitpod-hello-ui-demo/main.go 
-
-  
-  
