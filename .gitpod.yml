@@ -10,7 +10,7 @@ ports:
     protocol: "http"
     
 tasks:
-  - command: "go get -v ./... "
+  - command: go get -v ./... 
   - command: xterm                         &&
              gp await-port 6080            &&
              gp preview $(gp url 6080)        
