@@ -11,9 +11,9 @@ ports:
     
 tasks:
   - command: "go get -v ./... "
-  - command: gp await-port 6080            &&
-             gp preview $(gp url 6080)
-  - command: xterm           
+  - command: xterm                         &&
+             gp await-port 6080            &&
+             gp preview $(gp url 6080)        
     
   
   # not getting the following working from the .gitpod.yml file, but it works fine from the command line
